@@ -8,5 +8,5 @@ wunderground
 	.InImperialUnits()
 	.request(function (err, response) {
 		const weatherData = response.observations[0];
-		console.log(weatherData.imperial.temp);
+		console.log(weatherData);
 	});
