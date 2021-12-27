@@ -7,5 +7,6 @@ wunderground
 	.PWSCurrentConditions("KORPORTL1801")
 	.InImperialUnits()
 	.request(function (err, response) {
-		console.log(response.observations[0].imperial.temp);
+		const weatherData = response.observations[0];
+		console.log(weatherData.imperial.temp);
 	});
