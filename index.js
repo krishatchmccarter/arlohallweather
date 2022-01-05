@@ -11,8 +11,8 @@ app.get("/", (req, res) => {
 	res.sendFile("index.html");
 });
 
-app.get("/beans", (req, res) => {
-	res.send("Hello Bill!");
+app.get("/hello", (req, res) => {
+	res.send("<h1>I Love You, You little developer you</h1>");
 });
 
 app.listen(port, () => {
