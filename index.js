@@ -1,17 +1,20 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require("express");
+const app = express();
+const port = 3000;
 
-app.use(express.static('images'))
-app.use(express.static(__dirname))
+app.use(express.static("images"));
+app.use(express.static(__dirname));
 
-app.get('/', (req, res) => {
-  // res.send('Hello Bill!')
-  // pre-process weather.js here, then serve the result
-  // or specify a route like '/weather.js' and use a callback script from the web page
-  res.sendFile("index.html");
-})
+app.get("/", (req, res) => {
+	res.send("Hello Bill!");
+});
+
+app.get("/", (req, res) => {
+	// pre-process weather.js here, then serve the result
+	// or specify a route like '/weather.js' and use a callback script from the web page
+	res.sendFile("index.html");
+});
 
 app.listen(port, () => {
-  console.log(`Tunneling Pi app listening at http://localhost:${port}`)
-})
+	console.log(`Tunneling Pi app listening at http://localhost:${port}`);
+});
