@@ -5,7 +5,7 @@ const port = 3000;
 app.use(express.static("images"));
 app.use(express.static(__dirname));
 
-app.get("/", (req, res) => {
+app.get("/beans", (req, res) => {
 	res.send("Hello Bill!");
 });
 
