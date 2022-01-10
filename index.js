@@ -8,11 +8,11 @@ app.use(express.static(__dirname));
 app.set("view engine", "pug");
 
 app.get("/", (req, res) => {
-	res.render("weather");
+	res.render("layout");
 });
 
-app.get("/hello", (req, res) => {
-	res.send("<h1>I Love You, You developer you</h1>");
+app.get("/weather", (req, res) => {
+	res.render("weather");
 });
 
 app.listen(port, () => {

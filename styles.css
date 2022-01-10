@@ -167,6 +167,10 @@ a.linkedin {
 a.github {
 	background-image: url(images/github.svg);
 }
+a.discord {
+	background-image: url(images/discord.svg);
+}
+
 a.social:hover {
 	opacity: 1;
 }
