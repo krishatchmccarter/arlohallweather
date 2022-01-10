@@ -5,20 +5,10 @@ const port = 3000;
 app.use(express.static("images"));
 app.use(express.static(__dirname));
 
-app.get("/", (req, res) => {
-	const WeatherUndergroundNode = require("weather-underground-node");
-	require("dotenv").config();
-	const myApyKey = process.env.API_KEY;
-	const wunderground = new WeatherUndergroundNode(myApyKey);
+app.set("view engine", "pug");
 
-	wunderground
-		.PWSCurrentConditions("KORPORTL1801")
-		.InImperialUnits()
-		.request(function (err, response) {
-			const weatherData = response.observations[0];
-			console.log(weatherData);
-			res.send(weatherData);
-		});
+app.get("/", (req, res) => {
+	res.render("weather");
 });
 
 app.get("/hello", (req, res) => {

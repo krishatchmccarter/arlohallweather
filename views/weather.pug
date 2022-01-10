@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Arlo Hall Weather
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='styles.css')
+    link(href='https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900' rel='stylesheet')
+  body
+    .main-nav
+      ul.nav
+        li.name Arlo Hall Weather
+        li
+          a(href='#') Home
+        li
+          a(href='#') Photos
+        li
+          a(href='#') Fitness
+        li
+          a(href='#') Blog
+        li
+          a(href='#') Contact
+    header
+      h1.tag.name Welcome to Arlo Hall Weather
+    main.flex
+      .card
+        h2#currentstats Current Weather Conditions
+        p Current Temperature goes here
+      .card
+        h2 Arlo's Weather Station
+        p
+          | Logia 7-in-1 Weather Station - KORPORTL1801
+          img.card-image(src='images/weatherstation.jpg' alt='Photo of Weather Station at Arlo Hall')
+      .card
+        h2 Weather Forecast
+        p PWS Forecast Data Display Here
+    footer
+      p.copyright Copyright 2021, Kris Hatch-McCarter
+      ul
+        li
+          a.social.twitter(href='http://www.twitter.com/@krismccarter10' target='_blank') Twitter
+          a.social.linkedin(href='https://www.linkedin.com/in/kris-hatch-mccarter-718aaaa5/') LinkedIn
+        li
+          a.social.github(href='https://github.com/krishatchmccarter/') Github
+    script(src='weather.js')
+
