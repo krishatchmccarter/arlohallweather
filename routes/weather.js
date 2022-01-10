@@ -9,4 +9,5 @@ wunderground
 	.request(function (err, response) {
 		const weatherData = response.observations[0];
 		console.log(weatherData);
+		//document.getElementById(currentWeather).innerHTML = weatherData;
 	});

@@ -1,8 +1,13 @@
 extends layout.pug
 
 block content 
-        h1 Weather
-        img.card-image(src='images/weatherstation.jpg' alt='Photo of Weather Station at Arlo Hall')
-        p Logia 7-in-1 Weather Station - KORPORTL1801
-        main.flex
-            h2 output weather conditions here  
+    h1 Weather
+    main.flex
+        .card
+          h2#currentWeather Current Weather Conditions
+        .card
+          h2 and here  
+        .card
+          h2 and here
+        .card
+          h2 fill me too
