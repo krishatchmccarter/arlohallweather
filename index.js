@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/weather", (req, res) => {
+	const weatherRoutes = require("./routes/weather");
 	res.render("weather");
 });
 
