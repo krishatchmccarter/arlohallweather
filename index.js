@@ -1,4 +1,5 @@
 const express = require("express");
+
 const app = express();
 const port = 3002;
 
@@ -11,9 +12,14 @@ app.get("/", (req, res) => {
 	res.render("layout");
 });
 
-app.get("/weather", (req, res) => {
+app.get("/weather", async (req, res) => {
 	const weatherRoutes = require("./routes/weather");
-	res.render("weather");
+
+	let data = await weatherRoutes.getweather();
+	let imperialUnits = data.observations[0].imperial;
+	console.log(imperialUnits);
+
+	res.render("weather", imperialUnits);
 });
 
 app.listen(port, () => {
