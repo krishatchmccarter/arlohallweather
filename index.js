@@ -22,6 +22,16 @@ app.get("/weather", async (req, res) => {
 	res.render("weather", imperialUnits);
 });
 
+// app.get("/forecast", async (req, res) => {
+// 	const forecastRoutes = require("./routes/forecast");
+
+// 	let data = await forecastRoutes.getforecast();
+// 	let imperialUnits = data.observations[0].imperial;
+// 	console.log(imperialUnits);
+
+// 	res.render("forecast", imperialUnits);
+// });
+
 app.listen(port, () => {
 	console.log(`Tunneling Pi app listening at http://localhost:${port}`);
 });

@@ -1,0 +1,23 @@
+extends layout.pug
+
+block content 
+    h1 Weather
+    main.flex
+        .card
+          h2 Temperature #{temp}
+          h2 Heat Index #{heatIndex}
+          h2 Dew Point #{dewpt}
+          h2 Wind Chill #{windChill}
+          h2 Wind Speed #{windSpeed}
+          h2 Wind Gust #{windGust}
+          h2 Pressure #{pressure}
+          h2 Precipitation Rate #{precipRate}
+          h2 Precipitation Total #{precipTotal}
+          h2 Elevation #{elev}
+        
+        //- .card
+        //-   h2 Heat Index #{heatIndex}  
+        //- .card
+        //-   h2 and here
+        //- .card
+        //-   h2 fill me too
