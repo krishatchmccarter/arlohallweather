@@ -9,8 +9,10 @@ head
 body
     include includes/header.pug
     block content
-        h1 Home of Arlo and his Personal Weather Station
-            p KORPORTL1801
-            img.ws(src='images/weatherstation.jpg' alt='')
+        h1 Welcome to Arlo Hall!
+        a(href='/weather') 
+            h2.city Click Here for Current Weather Conditions from Arlo's Weather Station KORPORTL1801
+            a(href='/weather') 
+                img.ws(src='images/weatherstation.jpg' alt='')
     include includes/footer.pug
 
