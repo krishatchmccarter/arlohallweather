@@ -1,23 +1,18 @@
 extends layout.pug
 
 block content 
-    h1 Weather
-    main.flex
-        .card
-          h2 Temperature #{temp}&#x2109
-          h2 Heat Index #{heatIndex}&#x2109
-          h2 Dew Point #{dewpt}&#x2109
-          h2 Wind Chill #{windChill}&#x2109
-          h2 Wind Speed #{windSpeed} mh
-          h2 Wind Gust #{windGust} mh
-          h2 Pressure #{pressure} hg
-          h2 Precipitation Rate #{precipRate} in
-          h2 Precipitation Total #{precipTotal} in
-          h2 Elevation #{elev} ft
-        
-        //- .card
-        //-   h2 Heat Index #{heatIndex}  
-        //- .card
-        //-   h2 and here
-        //- .card
-        //-   h2 fill me too
+  h1.hood Weather in Sellwood
+  h2.city Portland, Oregon
+  main.flex
+    .card
+      h1.temp Temperature #{temp}&#x2109
+      .heat Heat Index #{heatIndex}&#x2109
+      .point Dew Point #{dewpt}&#x2109
+      .chill Wind Chill #{windChill}&#x2109
+      .speed Wind Speed #{windSpeed} mh
+      .gust Wind Gust #{windGust} mh
+      .pressure Pressure #{pressure} hg
+      .rate Precipitation Rate #{precipRate} in
+      .total Total Precipitation #{precipTotal} in
+      .elevation Elevation #{elev} ft
+

@@ -64,6 +64,7 @@ header {
 	line-height: 1.5;
 }
 header .profile-image {
+	display: flex;
 	margin-top: 50px;
 	width: 150px;
 	height: 150px;
@@ -75,6 +76,15 @@ header .profile-image:hover {
 	transform: scale(1.2) rotate(360deg);
 }
 
+h1.hood,
+h2.city {
+	margin: 1%;
+}
+
+img.ws {
+	max-width: 100%;
+}
+
 .tag {
 	background-color: #efefef;
 	color: black;
@@ -83,47 +93,33 @@ header .profile-image:hover {
 	display: table;
 	margin: 30px;
 }
-.location {
-	background-color: #222;
-	color: white;
-}
+
 .card {
-	margin: 30px;
-	padding: 20px 40px 40px;
-	max-width: 500px;
-	text-align: left;
-	background: #fff;
-	border-bottom: 4px solid #ccc;
-	border-radius: 6px;
+	background: #000000d0;
+	color: white;
+	padding: 2em;
+	border-radius: 30px;
+	width: 100%;
+	max-width: 420px;
+	margin: 1em;
 }
+
+h1.temp {
+	margin: 0;
+	margin-bottom: 0.4em;
+}
+
+h1.stat {
+	margin: 0;
+	margin-bottom: 0.4em;
+}
+
 .card-image {
 	margin: 0px;
 	padding: 20px 40px 40px;
 	max-width: 400px;
 	text-align: left;
 	background: #fff;
-}
-
-.card:hover {
-	border-color: #ff99ff;
-}
-
-ul.skills {
-	padding: 0;
-	text-align: center;
-}
-
-.skills li {
-	border-radius: 6px;
-	display: inline-block;
-	background: #ff9904;
-	color: white;
-	padding: 5px 10px;
-	margin: 2px;
-}
-
-.skills li:nth-child(odd) {
-	background: #0399ff;
 }
 
 footer {
@@ -215,9 +211,4 @@ a.social:hover {
 		max-width: 1200px;
 		margin: 40px auto;
 	}
-}
-
-h3 {
-	color: maroon;
-	letter-spacing: 50px;
 }
