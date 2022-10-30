@@ -16,3 +16,8 @@ block content
       .total Total Precipitation #{precipTotal} in
       .elevation Elevation #{elev} ft
 
+  script.
+    function autoRefresh() {
+    window.location = window.location.href;
+    }
+    setInterval('autoRefresh()', 300000);
