@@ -9,12 +9,15 @@ block content
       .heat Heat Index #{heatIndex}&#x2109
       .point Dew Point #{dewpt}&#x2109
       .chill Wind Chill #{windChill}&#x2109
+      .elevation Elevation #{elev} ft
+
+    .card
+      h1.temp Rain Rate #{precipRate} in
+      .total Total Precipitation #{precipTotal} in
       .speed Wind Speed #{windSpeed} mh
       .gust Wind Gust #{windGust} mh
       .pressure Pressure #{pressure} hg
-      .rate Precipitation Rate #{precipRate} in
-      .total Total Precipitation #{precipTotal} in
-      .elevation Elevation #{elev} ft
+
 
   script.
     function autoRefresh() {
